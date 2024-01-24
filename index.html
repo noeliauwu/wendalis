@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi novia? :3</title>
+<style>
+    .body{
+        background-color: rgb(144, 83, 202);
+       text-align: center;
+        
+    }
+    .body__title{
+        color: white;
+    }
+    .body__img{
+        width: 100%;
+        border-radius: 30%;
+    
+    }
+    
+</style>
+
+</head>
+
+<body class="body">
+    <h1 class="body__title">¿QUIERES SER MI NOVIA ? 🥰
+    </h1>
+    <img 
+    src="https://i.ytimg.com/vi/6q8jm0Lu7GU/maxresdefault.jpg" 
+    alt="foto" class="body__img" />
+    <button id="yes">😻 Sipi😻  </button>
+    <button id="no"> 😭 Nopi 😭 </button>
+    
+    <script>
+        const butonSi = document.getElementById('yes');
+        const butonNo = document.getElementById('no');
+
+        const SomosEneves = () =>{
+            alert('Ya no hay vuelta atras, ahora eres mi Noviecita preciosa uwu');
+            alert('te quiero muchisimo wendy <3 ');
+            alert('muah, espero te guste la cancion te la dedico con todo mi corazon <3 ');
+            location.href= ' https://www.youtube.com/watch?v=eWZ-Z9sKFDI';
+        };
+        const EvitarQueMeDigaQueNo =() =>{
+            butonNo.style.position = 'absolute';
+            butonNo.style.top = (Math.random()* window.innerHeight)+ 'px';
+            butonNo.style.left = (Math.random()* window.innerWidth)+ 'px';
+        };
+        butonSi.addEventListener('click', SomosEneves);
+        butonNo.addEventListener('mouseover', EvitarQueMeDigaQueNo);
+    </script>
+
+
+</body>
+</html>
